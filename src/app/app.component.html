@@ -1,1 +1,30 @@
+<!-- <div *ngFor="let stat of Stats">
+  <span>{{ stat.Date }}</span>
+  <br>
+  <span>{{ stat.Confirmed }}</span>
+</div> -->
+<div>
+  <table>
+    <thead>
+      <tr>
+        <td>
+          Date
+        </td>
+        <td>
+          Confirmed
+        </td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr  *ngFor="let stat of Stats">
+        <td>
+          {{ stat.Date }}
+        </td>
+        <td>
+          {{ stat.Confirmed }}
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 <router-outlet></router-outlet>
